@@ -1,5 +1,5 @@
 {
-    "name": "cethyworks/content-injector-bundle",
+    "name": "muzhkevych/content-injector-bundle",
     "license": "MIT",
     "description": "Allow content injection before the app send the response to the client.",
     "type": "symfony-bundle",
