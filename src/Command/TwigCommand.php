@@ -2,12 +2,13 @@
 
 namespace Cethyworks\ContentInjectorBundle\Command;
 
+use Twig\Environment as TwigEnvironment;
 use Twig_Environment;
 
 class TwigCommand implements DataAwareCommandInterface, TemplateAwareCommandInterface
 {
     /**
-     * @var Twig_Environment
+     * @var TwigEnvironment
      */
     protected $twig;
 
@@ -24,9 +25,9 @@ class TwigCommand implements DataAwareCommandInterface, TemplateAwareCommandInte
     /**
      * TwigCommand constructor.
      *
-     * @param Twig_Environment $twig
+     * @param TwigEnvironment $twig
      */
-    public function __construct(Twig_Environment $twig)
+    public function __construct(TwigEnvironment $twig)
     {
         $this->twig = $twig;
     }
