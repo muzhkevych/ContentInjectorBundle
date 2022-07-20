@@ -37,7 +37,7 @@ class InjectorAwareTypeExtension extends AbstractTypeExtension
      */
     public function getExtendedType()
     {
-        return self::getExtendedTypes()[0];
+        return FormType::class;
     }
 
     /**
@@ -45,7 +45,7 @@ class InjectorAwareTypeExtension extends AbstractTypeExtension
      *
      * @return array The name of the type being extended
      */
-    public static function getExtendedTypes()
+    public static function getExtendedTypes(): iterable
     {
         return [FormType::class];
     }
